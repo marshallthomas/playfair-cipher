@@ -1,0 +1,15 @@
+to compile, type 
+gcc playfair.c
+
+to run, type
+
+./a.out inputfile outputfile # key
+where
+	-inputfile:  The file to be deciphered/encrypted
+	-outputfile:  The file created by the program
+	-#:  1 for encrypting the inputfile, 2 for deciphering the inputfile
+	-key:  The five letter word that acts as the key for the playfair cipher program.  You need to make sure that whoever is deciphering the encrypted file knows this key, otherwise it will take a lot of time to restore the file to its original format.  
+
+
+This program allows the user to encrypt/decrypt a file based on the playfair cipher method.  It doesn't group the individual letters into pairs, but instead keeps the original format of the file.  Note, that if the last letter doesn't have a pair, the program creates one with the letter X.  
+
